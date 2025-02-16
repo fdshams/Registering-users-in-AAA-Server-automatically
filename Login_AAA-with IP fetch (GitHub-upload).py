@@ -32,7 +32,7 @@ def get_next_ip_address(ip_assignment_method, workbook_path):
         next_ip = ipaddress.IPv4Address(last_ip) + 1
         return str(next_ip)
     elif ip_assignment_method == 'manual':
-        return '172.27.8.120'
+        return '192.168.1.15' # a dummy IP address here. Replace it as per intended IP address in reality.
     return None
 
 def parse_customer_name(name):
