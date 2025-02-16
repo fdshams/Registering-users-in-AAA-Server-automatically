@@ -44,8 +44,7 @@ def parse_customer_name(name):
     if len(name_components) >= 1:
         first_name = name_components[0].capitalize()
     if len(name_components) >= 2:
-        if name_components[0].capitalize() not in ["Ahmad", "Mohammad", "Muhammad"]:
-            last_name = name_components[1].capitalize()
+        last_name = name_components[1].capitalize()
     if len(name_components) >= 3:
         first_name = ' '.join(name_components[0:2]).title()
         last_name = name_components[2].title()
@@ -65,7 +64,7 @@ def generate_password(customer_ID, name):
     comp1, comp2 = '', ''
     
     if name_parts:
-        if name_parts[0].capitalize() in ["Ahmad", "Mohammad"]:
+        if name_parts[0].capitalize() in ["Mr.", "Mrs."]:
             comp1 = name_parts[1].capitalize()
             comp2 = name_parts[-1][0].upper()
         else:
