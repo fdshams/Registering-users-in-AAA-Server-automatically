@@ -19,7 +19,7 @@ def configure_browser():
     """Configure and return the Chrome WebDriver."""
     chrome_options = Options()
     chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9332")
-    driver_path = "D:/Automation/chromedriver.exe"
+    driver_path = "D:/ChromeFolder/chromedriver.exe"
     return webdriver.Chrome(driver_path, options=chrome_options)
 
 def get_next_ip_address(ip_assignment_method, workbook_path):
