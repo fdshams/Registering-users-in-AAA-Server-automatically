@@ -1,8 +1,32 @@
-# Customer Registration and IP Management Script
+# Customer Registration Automation via Selenium and IP Management Script
 
 **Customer Registration and IP Management Script**
 
-This Python script automates the process of customer registration, IP address assignment, and password generation. It interacts with a browser using Selenium to register customer details in an online system (referred to as "AAA system"). Additionally, it handles the assignment of IP addresses from a pool stored in an Excel workbook and updates the pool with newly assigned IPs.
+This project automates the process of registering new customers into a web-based AAA (Authentication, Authorization, Accounting) system using Selenium WebDriver and Python. Additionally, it handles the assignment of IP addresses from a pool stored in an Excel workbook and updates the pool with newly assigned IPs.
+
+It includes functionality to:
+
+Assign IP addresses (automatically or manually)
+
+Parse and format customer data
+
+Generate secure PPPoE passwords
+
+Interact with a browser to input data into the AAA web interface
+
+Maintain and update an Excel-based IP address pool
+
+**What is AAA?**
+
+AAA stands for:
+
+Authentication – Verifies the identity of a user (e.g., using username and password).
+
+Authorization – Determines what resources or services a user is permitted to access.
+
+Accounting – Logs user activity for billing or auditing purposes.
+
+In ISP or telecom environments, AAA systems manage customer sessions for services like broadband or PPPoE internet. This script automates new account registration on such systems.
 
 ## Features
 - **Browser Automation**: Uses Selenium WebDriver to automate browser interactions for customer registration.
